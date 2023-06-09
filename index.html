@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    
-
 </head>
 
 <body>
@@ -17,7 +15,24 @@
     <header></header>
     <nav></nav>
     <section>
-        <div id="myApp1"></div>
+        <h1>Inicio</h1>
+        <p>{{1+1}}</p> 
+        <!--Todo ese lemento pasa al control de Vue-->
+        <div id="myApp1">
+            <p>Desde Veu.app</p> 
+             <!--Dentro de las llaves va codigo js-->
+            <p>{{1+1}}</p> 
+            <p>{{true}}</p>
+            <p>{{true?'Activo':'Inactivo'}}</p>
+            <h4>nombre</h4>
+            <h4>{{nombre}}</h4>
+            <h4>{{apellido}}</h4>
+            <h4>{{mensaje}}</h4>
+            <button v-on:click="cambiarNombre">Cambiar Nombre</button>
+            <button v-on:click=" cambiarApellido">Cambiar Apellido</button>
+        </div>
+
+        <h1>Fin</h1>
 
 
     </section>
