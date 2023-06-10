@@ -17,7 +17,35 @@
     <section>
         <!--Todo ese lemento pasa al control de Vue-->
         <div id="myApp2">
-            
+            <h4>Estudiante UCE</h4>
+            <input type="text" v-model="nombre" v-on:keypress.enter="agregarEstudiante2">
+            <!--Lo vincula a una proiedad reactiva-->
+            <h1>{{nombre}}</h1>
+            <hr>
+            <h1>Lista Estudiante</h1>
+            <!--<ul>
+                <li>{{miarreglo[0].nombre + miarreglo[0].apellido }}</li>
+                <li>{{miarreglo[1].apellido}}</li>
+                <li>{{miarreglo[2]}}</li>
+                <li>{{miarreglo[3]}}</li>
+                <li>{{miarreglo[4]}}</li>
+                <li>{{miarreglo[5]}}</li>
+                <li>{{miarreglo[6]}}</li>
+                <li>{{miarreglo[7]}}</li>
+                <li>{{miarreglo[8]}}</li>
+                <li>{{miarreglo[9]}}</li>
+            </ul> -->
+        
+            <ul>
+                <li v-for="({nombre,apellido}, index) in miarreglo">
+                    <span>{{index}}-{{nombre}}</span>
+                    
+                    <blockquote>{{apellido}}</blockquote>
+                </li>
+            </ul>
+
+
+
         </div>
 
         <h1>Fin</h1>
@@ -27,7 +55,7 @@
     <footer></footer>
 
    
-    <script src="./js/vFor.js"></script>
+    <script src="../js/vFor.js"></script>
 
 </body>
 </html>
