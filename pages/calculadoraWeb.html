@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos</title>
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="../css/calculadoraWeb.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Calculadora Web</h1>
+    </header>
+    <nav></nav>
+
+    <section>
+
+        <div class="container">
+
+            <div id="myAppCalculadora">
+                <div class="calculadora">
+                    <input type="text" id="resultado">
+                    <button @click="entrada(1)">1</button>
+                    <button @click="entrada(2)">2</button>
+                    <button @click="entrada(3)">3</button>
+                    <button @click="entrada('+')">+</button>
+                    <button @click="entrada(4)">4</button>
+                    <button @click="entrada(5)">5</button>
+                    <button @click="entrada(6)">6</button>
+                    <button @click="entrada('-')">-</button>
+                    <button @click="entrada(7)">7</button>
+                    <button @click="entrada(8)">8</button>
+                    <button @click="entrada(9)">9</button>
+                    <button @click="entrada('/')">/</button>
+                    <button @click="entrada('0')" class="botonCero">0</button>
+                    <button @click="limpiarEntrada()">C</button>
+                    <button @click="calculoResultado('=')">=</button>
+                    <button @click="entrada('*')">*</button>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <script src="../js/calculadoraWeb.js"></script>
+
+</body>
+
+</html>

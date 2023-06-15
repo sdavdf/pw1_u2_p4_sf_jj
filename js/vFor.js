@@ -19,7 +19,7 @@ const app = Vue.createApp({
     data() {
         return {
             miarreglo: personas,
-            nombre: 'Juan'
+            nombre: 'Ana'
         }
     },
     methods: {
@@ -47,10 +47,10 @@ const app = Vue.createApp({
             console.log('Vamos agregar')
             const nuevoEstudiante = {
                 nombre: this.nombre,
-                apellido: 'Nuevo Apellido'
+                //apellido: this.apellido
             }
             this.miarreglo.unshift(nuevoEstudiante)
-        },
+        }
 
 
     }
